@@ -1,0 +1,233 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Garage</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Garage, Car, Bike"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- //for-mobile-apps -->
+    <link href="{% static 'garage/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'garage/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <!-- font-awesome icons -->
+    <link href="{% static 'garage/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="{% static 'garage/js/jquery-1.11.1.min.js' %}"></script>
+    <!-- //js -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="{% static 'garage/js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'garage/js/easing.js' %}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+</head>
+
+<body>
+<!-- header -->
+<div class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left">
+            <h1><a href="index.html">Auto Garage</a></h1>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //header -->
+<!-- navigation -->
+
+<!-- //navigation -->
+<!-- breadcrumbs -->
+<!-- //breadcrumbs -->
+<!-- register -->
+<div class="register">
+    <div class="container">
+        <h2>Register Here</h2>
+        <div class="login-form-grids">
+            <form action="verify.html" method="post">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Person Name</label>
+                            <input type="text" name="name" placeholder="Enter Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Garage Name</label>
+                            <input type="text" name="gname" placeholder="Enter Garage Name" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Mobile No</label>
+                            <input type="text" name="mobile" placeholder="Enter Mobile No" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Email ID</label>
+                            <input type="email" placeholder="Email Address" required=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Area</label>
+                            <input type="text" name="area" placeholder="Enter Area" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="Enter City" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>State</label>
+                            <input type="text" name="state" placeholder="Enter State" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="text" name="pincode" placeholder="Enter Pincode" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Time </label>
+                            <input type="text" name="amtime" required="" placeholder="AM"> to <input type="text" name="pmtime" required="" placeholder="PM">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Days</label><br>
+                            <label>Mon   <input type="checkbox" name="mon"><i> </i></label><label>Tue   <input type="checkbox" name="tue"><i> </i></label><label>Wed   <input type="checkbox" name="wed"><i> </i></label><label>Thu   <input type="checkbox" name="thu"><i> </i></label><label>Fri   <input type="checkbox" name="fri"><i> </i></label><label>Sat   <input type="checkbox" name="sat"><i> </i></label><label>Sun   <input type="checkbox" name="sun"><i> </i></label>     
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Upload Garage Profile</label>
+                            <input type="file" placeholder="Upload Profile Photo" required=" "  class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <label>Service Type</label><br>
+                            <label><input type="checkbox" name="car"></label>Car<br>  
+                            <label><input type="checkbox" name="bike"></label>Bike<br>   
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" required=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="password" placeholder="Password Confirmation" required=" ">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div> 
+    </div>
+</div>
+<!-- //register -->
+<!-- //footer -->
+<!-- <div class="footer-copy" style="background-color: black;">
+    <p>© 2018 Stuff Conveyor. All rights reserved | Design by <a href="#">Combot Pvt. Ltd.</a></p>
+</div> -->
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'garage/js/bootstrap.min.js' %}"></script>
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<script src="{% static 'garage/js/minicart.min.js' %}"></script>
+<script>
+    // Mini Cart
+    paypal.minicart.render({
+        action: '#'
+    });
+
+    if (~window.location.search.indexOf('reset=true')) {
+        paypal.minicart.reset();
+    }
+</script>
+<!-- main slider-banner -->
+<script src="{% static 'garage/js/skdslider.min.js' %}"></script>
+<link href="{% static 'garage/css/skdslider.css' %}" rel="stylesheet">
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#demo1').skdslider({
+            'delay': 5000,
+            'animationSpeed': 2000,
+            'showNextPrev': true,
+            'showPlayButton': true,
+            'autoSlide': true,
+            'animationType': 'fading'
+        });
+
+        jQuery('#responsive').change(function () {
+            $('#responsive_wrapper').width(jQuery(this).val());
+        });
+
+    });
+</script>
+<!-- //main slider-banner -->
+
+</body>
+</html>

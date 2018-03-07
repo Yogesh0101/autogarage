@@ -1,0 +1,204 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+		<title>Auto Garage</title><meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{% static 'adminpanel/css/bootstrap.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'adminpanel/css/bootstrap-responsive.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'adminpanel/css/uniform.css' %}" />
+		<link rel="stylesheet" href="{% static 'adminpanel/css/select2.css' %}" />		
+		<link rel="stylesheet" href="{% static 'adminpanel/css/maruti-style.css' %}" />
+		<link rel="stylesheet" href="{% static 'adminpanel/css/maruti-media.css' %}" class="skin-color" />	
+	</head>
+	<body>
+		
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Auto Garage</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-messaages-->
+<div class="btn-group rightzero"> <a class="top_message tip-left" title="Manage Files"><i class="icon-file"></i></a> <a class="top_message tip-bottom" title="Manage Users"><i class="icon-user"></i></a> <a class="top_message tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a> <a class="top_message tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a> </div>
+<!--close-top-Header-messaages--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class="" ><a title="" href="profile.html"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+    <li class=""><a title="" href="messages.html"><i class="icon icon-envelope"></i> <span class="text">Messages</span></a></li>
+      
+    </li>
+    <li class=""><a title="" href="setting.html"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+<!--close-top-Header-menu-->
+
+<div id="sidebar"><a href="index.html" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a><ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+   <!--  <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li> -->
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Garage</span></a>
+      <ul>
+        <li><a href="view_garage.html">View Garage</a></li>
+        <li><a href="add_garage.html">Add Garage</a></li>
+        <li><a href="garage_request.html">Garage Request</a></li>
+      </ul>
+    </li>
+    <li><a href="users.html"><i class="icon icon-th"></i> <span>Users</span></a></li>
+   <!--  <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li> -->
+    
+    <!-- <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+    <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li> -->
+    <li class="submenu"> <a href="advertise.html"><i class="icon icon-file"></i> <span>Advertise</span></a>
+      <ul>
+        <li><a href="adsreq.html">Ads Request</a></li>
+        <li><a href="advertise.html">Ads Advertise</a></li>
+        <!-- <li><a href="calendar.html"></a></li>
+        <li><a href="chat.html">Chat option</a></li> -->
+      </ul>
+    </li>
+  </ul>
+</div>
+		<div id="content">
+			<div id="content-header">
+				<div id="breadcrumb">
+				<a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+				<a href="#">Garage</a>
+				<a href="#" class="current">Add Garage</a>
+				</div>
+                <h1>Garage Form</h1>
+			</div>
+			
+			<div class="container-fluid">
+				
+				<div class="row-fluid">
+						
+					<div class="row-fluid">
+						<div class="span3"></div>
+						<div class="span6">
+							<div class="widget-box">
+								<div class="widget-title">
+									<span class="icon">
+										<i class="icon-info-sign"></i>									
+									</span>
+									<h5>Add Garage</h5>
+								</div>
+								<div class="widget-content nopadding">
+									<form class="form-horizontal" method="post" action="#" name="password_validate" id="password_validate" novalidate="novalidate">
+
+
+										<div class="control-group">
+                <label class="control-label">Person Name :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="Person name" required="" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Garage Name :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="Garage name" required=""  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Mobile No :</label>
+                <div class="controls">
+                  <input type="text" maxlength="13" class="span11" placeholder="Mobile no" required="" />
+                </div> 
+              </div>
+              <div class="control-group">
+                <label class="control-label">Email ID :</label>
+                <div class="controls">
+                  <input type="email" class="span11" placeholder="Email" required="@.com" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Area :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="Area" required=""  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">City :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="City" required=""  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">State :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="State" required=""  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Pincode number :</label>
+                <div class="controls">
+                  <input type="text" class="span11" maxlength="6" placeholder="Pincode" required=""  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Time :</label>
+                <div class="controls">
+                <input type="number" min="0" max="12" class="span2" /> AM to <input type="number" min="0" max="12" class="span2" required="" /> PM
+                </div> 
+              </div>
+              <div class="control-group">
+                <label class="control-label">Days :</label>
+                <div class="controls">
+                  Mon<input type="checkbox" name="radios" />  Tue<input type="checkbox" name="radios" />  Wed<input type="checkbox" name="radios" />  Thu<input type="checkbox" name="radios" />  Fri<input type="checkbox" name="radios" />  Sat<input type="checkbox" name="radios" />  Sun<input type="checkbox" name="radios" required=""  />   
+                </div>
+              </div> 
+              <div class="control-group">
+                <label class="control-label">Garage Photo :</label>
+                <div class="controls">
+                  <input type="file" required=""  />
+                </div>
+              </div> 
+              <div class="control-group">
+                <label class="control-label">Service Type :</label>
+                <div class="controls">
+                  Bike<input type="checkbox" name="radios" required=""  />  Car<input type="checkbox" name="radios" />   
+                </div>
+              </div>
+              
+              
+										<div class="control-group">
+											<label class="control-label">Password :</label>
+											<div class="controls">
+												<input type="password" name="pwd" id="pwd" required="" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">Confirm password :</label>
+											<div class="controls">
+												<input type="password" name="pwd2" id="pwd2" required=""  />
+											</div>
+										</div>
+										<div class="form-actions">
+                <button type="submit" class="btn btn-success" >Submit</button>
+              </div>
+									</form>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+				
+			</div>
+		</div> <div class="row-fluid">
+      <div id="footer" class="span12">2018 © Auto Garage</div>
+    </div>
+            <script src="{% static 'adminpanel/js/jquery.min.js' %}"></script>
+            <script src="{% static 'adminpanel/js/jquery.ui.custom.js' %}"></script>
+            <script src="{% static 'adminpanel/js/bootstrap.min.js' %}"></script>
+            <script src="{% static 'adminpanel/js/jquery.uniform.js' %}"></script>
+            <script src="{% static 'adminpanel/js/select2.min.js' %}"></script>
+            <script src="{% static 'adminpanel/js/jquery.validate.js' %}"></script>
+            <script src="{% static 'adminpanel/js/maruti.js' %}"></script>
+            <script src="{% static 'adminpanel/js/maruti.form_validation.js' %}"></script>
+	</body>
+
+</html>
